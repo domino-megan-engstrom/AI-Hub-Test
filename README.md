@@ -11,7 +11,7 @@ A short description of the template goes here. Ideally, describe the use case, t
 Does this template work with a standard environment? If so, mention which environment is required. If not, please fill the sections below to indicate how a custom environment should be set up to use this template:
 
 #### Base Image
-Specify the base image for the custom environment. The base image should be publicly accessible 
+Specify the base image for the custom environment. The base image should be publicly accessible. Domino should be able to download it without requiring credentials.
 
 #### Dockerfile Instructions
 Add Dockerfile instructions that a user will copy into the Dockerfile for their custom environment.
