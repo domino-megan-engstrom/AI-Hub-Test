@@ -39,6 +39,12 @@ List step-by-step instructions for how to use a project created from this templa
 4. ...
 5. ...
 
+## Known issues
+Document all the known issues with the repo in this section
+
+## References
+Any references you'd like to include go here.
+
 ## Best Practices
 
 ### Code
