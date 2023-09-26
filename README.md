@@ -39,10 +39,24 @@ List step-by-step instructions for how to use a project created from this templa
 4. ...
 5. ...
 
-## Release process
-Follow the best practices below for releasing templates from this repo:
+## Best Practices
 
-1. Always release a template from a protected release branch.
-2. Follow semantic versioning for releases. Create a protected branch with a prefix ``release-X.Y.Z`` for every release.
-3. Always make the latest release the default branch for the repo.
-4. <placeholder for jira>
+### Code
+1. Use Case templates should ideally contain an end-to-end experience from development to productionization
+2. README should include usage instructions
+3. Any links in the README should use absolute URLs
+4. If the repo contains a notebook, ensure that the notebook well documented
+
+### Testing
+1. List the Domino versions that the code in this repo has been validated against: 5.8
+2. If an automated test is included in the repo, document how it should be run:
+
+### Release process
+1. Development may continue from a main/active branch
+2. Maintain a CHANGELOG for the repo, that documents major changes in the repo
+3. Whenever the template code is ready to be released (prerogative of template creator, who will sign off on the release based on automated + manual testing), create a release branch
+4. Follow semantic versioning for releases. Release branches should be created with a prefix ``release-X.Y.Z`` for every release.
+5. Ensure that the release branch is protected.
+6. Always make the latest release the default branch for the repo.
+7. Once a new version is ready to be released, reach out to Domino by submitting the [intake form](https://docs.google.com/forms/d/e/1FAIpQLSe9OgI8eCzsu4WCyfG1xPV8C-xR9Wg--mo7Uq4UX1QBCEqyFw/viewform?usp=sf_link)
+8. After submitting the form: Domino will reach out to start the process of including the new version in the Hub. At this point, the release branch should be provided git reference in the commit. The Domino team will ensure that the release branch name is mapped to the hub revision, and perform other checks as part of the review process.
