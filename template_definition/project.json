@@ -1,1 +1,47 @@
+{
+   "title":"My Internal Template",
+   "description":"This template is local to my Domino deployment",
+   "categories":[
+      "LLM"
+   ],
+   "models":[
+      {
+         "name":"Extra Trees Regressor",
+         "link":"https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.ExtraTreesRegressor.html"
+      }
+   ],
+   "mainRepository":{
+      "uri":"https://github.com/dominodatalab/reference-project-wind-turbine",
+      "ref":{
+         "type":"branches",
+         "value":"release-1.0.0"
+      },
+      "serviceProvider":"github"
+   },
+   "owner":{
+      "name":"MyCompanyName",
+      "link":"https://mycompany.homepage"
+   },
+   "created":"2024-01-12T20:22:52.00Z",
+   "data":{
+      "name":"This project uses Supervisory Control and Data Acquisition (SCADA) data captured from a physical wind turbine.",
+"link":"https://www.kaggle.com/datasets/berkerisen/wind-turbine-scada-dataset"
+   },
+   "dataFormat":"csv",
+   "recommended":false,
+   "hardwareTier":{
+      "value":"This project works with a standard small-sized hardware tier, such as the small-k8s tier on all Domino deployments."
+   },
+   "dependencies":[
+      {
+         "templateName":"Ecosystem Template Domino Standard Environment with Python 3.9",
+         "created":"2023-12-20T21:30:25.00Z",
+         "kind":"Environment"
+      }
+   ],
+   "environmentReqs":{
+      "value":"The code in this Template requires a DSE with Python 3.9 to run."
+   },
+   "supportedDominoVersions":[ "5.10.0"]
+}
 
